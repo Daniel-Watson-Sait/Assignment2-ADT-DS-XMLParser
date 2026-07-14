@@ -4,8 +4,26 @@ import java.io.*;
 
 import implementations.MyStack;
 
+
+/**
+ * The AppDriver for the xml validation app.
+ * 
+ * The program reads an XML file as a command-line argument
+ * and validates nesting and matching XML tags using a stack.
+ * It reports common XML formatting errors.
+ * 
+ * @author Daniel Watson, Habin Park, Krisha Race Naz, Alexander Dea
+ * @version July 14, 2026
+ */
 public class AppDriver {
 
+	/**
+	 * Starts the XML validation app.
+	 * 
+	 * First command-line argument must be the path to the XML file to validate.
+	 * 
+	 * @param args command-line arguments where args[0] is the path to the XML file
+	 */
 	public static void main(String[] args) {
 		
 		MyStack<String> stack = new MyStack<>();
