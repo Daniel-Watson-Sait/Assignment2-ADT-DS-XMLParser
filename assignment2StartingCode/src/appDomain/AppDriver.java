@@ -2,6 +2,8 @@ package appDomain;
 
 import java.io.*;
 
+import implementations.MyStack;
+
 public class AppDriver {
 
 	public static void main(String[] args) {
@@ -74,7 +76,7 @@ public class AppDriver {
 						
 						if (!rootFound) {
 							rootFound = true;
-						} else if (stack.isEmpty) {
+						} else if (stack.isEmpty()) {
 							System.out.println("Line " + lineNumber + ": Multiple root elements found.");
 						}
 						
