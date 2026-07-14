@@ -27,7 +27,7 @@ public class AppDriver {
 				// Search current line for XML tags
 				while ((start = line.indexOf('<', start)) != -1) {
 					
-					int end = line.indexOf('<', start);
+					int end = line.indexOf('>', start);
 					
 					if (end == -1) {
 						System.out.println("Line " + lineNumber + ": Missing closing '>'");
